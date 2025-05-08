@@ -121,6 +121,8 @@ int main()
         cout << "Menu" << endl;
         cout << "1. Menambah data kedalam list" << endl;
         cout << "2. Menghapus data dari dalam list" << endl;
+        cout << "3. Menampilkan semua data didalan list" << endl;
+
 
     } while ();
     
