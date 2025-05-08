@@ -45,7 +45,7 @@ public:
         {
             if (nim == current->noMhs)
             {
-                cout << "\nDuplikasi noMhs tidak di jalankan"
+                cout << "\nDuplikasi noMhs tidak diijinkan";
             }
 
         }
