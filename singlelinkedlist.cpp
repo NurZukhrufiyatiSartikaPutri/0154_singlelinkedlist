@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-class Mode
+class Node
 {
 public:
     int noMhs;
-    Mode *next;
+    Node *next;
 };
 
 class List
@@ -18,13 +18,24 @@ public:
         START = NULL;
     } 
     
-    Void addNode()
+    void addNode()
     {
         int nim;
         cout << "\nMasukkan Nomor Mahasiswa: ";
         cin >> nim;
 
-        
+        Node *nodeBaru = new Node;
+        nodeBaru ->noMhs = nim;
+
+        if (START == NULL || nim <= START->noMhs)
+        {
+            if ((START == NULL) && (nim == START->noMhs))
+            {
+                cout << "\nDuplikasi noMhs tidak diijinkan\n";
+            }
+        }
+
+
     }
 
 
